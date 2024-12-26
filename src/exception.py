@@ -1,9 +1,5 @@
 import sys
-from logger import logging
-
-# Configure logging
-logging.basicConfig(filename='app.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+from src.logger import logging
 
 def error_message_details(error, error_detail:sys):
     # this will return the error message and the line number
