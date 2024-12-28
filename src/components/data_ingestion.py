@@ -5,7 +5,8 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split 
 from dataclasses import dataclass
-
+from src.components.data_transformation import DataTransformationConfig, DataTransformation
+from src.components.model_trainer import ModelTrainerConfig, ModelTrainer
 """
 If we are only defining the class and not using it, 
 then we can define the class in the same file where we are defining the dataclass.
@@ -47,7 +48,19 @@ class DataIngestion:
         
 if __name__ == "__main__":
     data_ingestion = DataIngestion()
-    data_ingestion.initiate_data_ingestion()
+    train_data, test_data = data_ingestion.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    train_array, test_array, _  = data_transformation.initiate_data_transformation(train_data, test_data)
+
+    model_trainer = ModelTrainer()  
+    r2_score_best_model = model_trainer.initiate_model_trainer(train_array, test_array, preprocessor_path = None)
+    print(f"Best model R2 score: {r2_score_best_model}")    
+    logging.info(f"Best model R2 score: {r2_score_best_model}")
+
+
+
+
         
 
 
