@@ -28,7 +28,10 @@ Here you can find a small demo video of the Flask web application. It is very si
 - Create a new conda environment :
     ```sh
     conda create -p venv python==3.8 -y
+- Activate the environment:
+    ```sh
+    conda activate venv
 
-
+    or you might have to provide the full venv path which is inside the project folder
 - 
 
