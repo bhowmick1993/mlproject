@@ -32,6 +32,16 @@ Here you can find a small demo video of the Flask web application. It is very si
     ```sh
     conda activate venv
 
-    or you might have to provide the full venv path which is inside the project folder
-- 
+    *or you might have to provide the full venv path which is inside the project folder*
+- Install the requirements
+    ```sh
+    pip install -r requirements.py
 
+- Now finally run the flask application
+    ```sh
+    python application.py
+    
+- Once previous step is running, go to the browser and in the address bar type:
+
+    ```sh
+    http://127.0.0.1:5000/predict_data
