@@ -6,7 +6,7 @@ The dataset **data** folder.
 ### Video
 Here you can find a small demo video of the Flask web application. It is very simple. The main purpose is to demonstrate how the notebook experiments gets converte into a finall application.
 
-*demo_video/prediction_demo.mkv*
+![Demo_Flask_Video](demo_video/prediction_demo.mkv)
 
 ### Image
 ![Demo_Flask_Image](demo_image/flask_web_app.PNG)
