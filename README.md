@@ -20,7 +20,15 @@ Here you can find a small demo video of the Flask web application. It is very si
 ## How to Run?
 
 - Clone this github Repo
-   `git clone https://github.com/bhowmick1993/mlproject.git`
+   ```sh 
+   git clone https://github.com/bhowmick1993/mlproject.git`
+
 - First launch a VSCode instance.
+- Open the project folder
+- Create a new conda environment :
+    ```sh
+    conda create -p venv python==3.8 -y
+
+
 - 
 
