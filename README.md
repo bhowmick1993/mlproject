@@ -8,6 +8,10 @@ Here you can find a small demo video of the Flask web application. It is very si
 
 ![Demo_Flask_Video](demo_video/prediction_demo.mkv)
 
+Deployed the app in AWS Beanstalk using **AWS Beanstalk** and **CodePipeline**
+
+![AWS_Elasticbeanstalk_Deployment_Video](demo_video/aws_elasticbeanstalk_app.mkv)
+
 ### Image
 ![Demo_Flask_Image](demo_image/flask_web_app.PNG)
 
